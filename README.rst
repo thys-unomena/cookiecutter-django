@@ -151,7 +151,7 @@ Answer the prompts with your own desired options_. For example::
     version [0.1.0]: 0.0.1
     timezone [UTC]: America/Los_Angeles
     use_whitenoise [y]: n
-    use_celery [n]: y
+    use_celery [y]: y
     use_mailhog [n]: n
     use_sentry_for_error_reporting [y]: y
     use_opbeat [n]: y

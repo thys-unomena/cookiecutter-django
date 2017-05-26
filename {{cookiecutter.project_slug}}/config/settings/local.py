@@ -8,7 +8,6 @@ Local settings
 - Use console backend for emails
 {% endif %}
 - Add Django Debug Toolbar
-- Add django-extensions as app
 """
 
 from .base import *  # noqa
@@ -45,11 +44,6 @@ CACHES = {
     }
 }
 
-# django-debug-toolbar
-# ------------------------------------------------------------------------------
-MIDDLEWARE += ['debug_toolbar.middleware.DebugToolbarMiddleware', ]
-INSTALLED_APPS += ['debug_toolbar', ]
-
 INTERNAL_IPS = ['127.0.0.1', '10.0.2.2', ]
 {% if cookiecutter.use_docker == 'y' %}
 {# [cookiecutter-django] This is a workaround to flake8 "imported but unused" errors #}
@@ -66,10 +60,6 @@ DEBUG_TOOLBAR_CONFIG = {
     ],
     'SHOW_TEMPLATE_CONTEXT': True,
 }
-
-# django-extensions
-# ------------------------------------------------------------------------------
-INSTALLED_APPS += ['django_extensions', ]
 
 # TESTING
 # ------------------------------------------------------------------------------

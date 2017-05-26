@@ -30,7 +30,7 @@ timezone [UTC]
 use_whitenoise [y]
     Whether to use WhiteNoise_ for static file serving.
 
-use_celery [n]
+use_celery [y]
     Whether to use Celery_. This gives you the ability to use distributed task
     queues in your project.
 
