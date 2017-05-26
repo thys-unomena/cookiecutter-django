@@ -50,7 +50,7 @@ THIRD_PARTY_APPS = [
     'allauth.account',  # registration
     'allauth.socialaccount',  # registration
     'rest_framework',
-    'django_filter',
+    'django_filters',
 ]
 
 # Apps specific for this project go here.
